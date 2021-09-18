@@ -423,7 +423,7 @@ button {
 .kv__wrapper {
   height: 86.5%;
   width: 76.4%;
-  background-image: url(/img/kv-img.jpg);
+  background-image: url(../img/kv-img.jpg);
   background-size: cover;
   background-position: center 0;
   position: relative;
@@ -505,7 +505,7 @@ button {
 }
 
 .about__bg {
-  background-image: url(/img/about-img.jpg);
+  background-image: url(../img/about-img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -695,7 +695,7 @@ button {
 .about-kv__wrapper {
   height: 86%;
   width: 76.4%;
-  background-image: url(/img/heading-img_about.jpg);
+  background-image: url(../img/heading-img_about.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
