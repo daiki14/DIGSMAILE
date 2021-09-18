@@ -1,0 +1,38 @@
+.topics__list {
+  max-width: 700px;
+}
+
+.topics__item {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+
+  @include mq('sp') {
+    margin-bottom: 20px;
+  }
+}
+
+.topics__date {
+  color: #cecece;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.topics__text {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+
+  @include mq('sp') {
+    font-size: 12px;
+  }
+}
+
+.ml-auto {
+  margin-left: auto;
+
+  @include mq('sp') {
+    margin-left: 0;
+  }
+}

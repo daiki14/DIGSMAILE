@@ -1,0 +1,183 @@
+.header {
+}
+
+.header__title {
+  width: 260px;
+  position: fixed;
+  top: 38px;
+  left: 4vw;
+  z-index: 1;
+
+  @include mq('tab') {
+    width: 180px;
+    top: 21px;
+  }
+
+  @include mq('sp') {
+    width: 180px;
+    top: 21px;
+  }
+}
+
+.black {
+
+  // fill: #333;
+  // transition: fill .3s;
+
+  // img {
+  //   fill: #333;
+  //   transition:  fill .3s;
+  // }
+
+  svg {
+    path {
+      fill: #333;
+      transition: fill .3s;
+    }
+  }
+}
+
+.header__nav {
+  font-weight: bold;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 36.1vw;
+  text-align: center;
+  padding: 120px 0 0;
+  background: rgba(34,34,34,95);
+  z-index: 2;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform .3s, opacity .3s;
+
+  a {
+    color: #fff;
+  }
+
+  @include mq('tab') {
+    width: 67.7vw;
+  }
+
+  @include mq('sp') {
+    width: 67.7vw;
+  }
+}
+
+.header__item {
+  margin-bottom: 30px;
+
+  &:first-child {
+    margin-bottom: 40px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* ==============================================================
+# ハンバーガー
+=========================================================== */
+.burger__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 38px;
+  right: 4vw;
+  z-index: 3;
+
+  @include mq('tab') {
+    top: 28px;
+  }
+
+  @include mq('sp') {
+    top: 28px;
+  }
+}
+
+.bar {
+  display: block;
+  background: #fff;
+  height: 2px;
+  width: 22px;
+  border-radius: 1px;
+}
+
+.bar__top {
+  transform: translateY(-4px);
+  transition: transform .3s;
+}
+
+.bar__bottom {
+  transform: translateY(4px);
+  transition: transform .3s;
+}
+
+.menu {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+// ハンバーガーボタン開いたとき
+.cross {
+  .bar__top {
+    transform: translateY(2px)rotate(30deg);
+    transition: transform .3s;
+  }
+  .bar__mid {
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .bar__bottom {
+    transform: translateY(-2px)rotate(-30deg);
+    transition: transform .3s;
+  }
+}
+
+// ハンバーガーメニュー開いたとき
+.noscroll {
+  overflow: hidden;
+
+}
+
+.open {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform .3s opacity .3s;
+  height: 100%;
+}
+
+.burger__musk {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0, .5);
+  z-index: 1;
+
+  @include mq('sp') {
+    height: 100%;
+  }
+}
+
+.black {
+
+  .bar {
+    background: #333;
+    transition: background-color .3s;
+  }
+
+  .menu {
+    color: #333;
+    transition: color .3s;
+  }
+}

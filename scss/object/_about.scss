@@ -1,0 +1,42 @@
+.about {
+  padding-top: 120px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100vw;
+    height: 160px;
+    display: block;
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  @include mq('sp') {
+    padding: 80px 0 4vw;
+  }
+}
+
+.about__bg {
+  background-image: url(/img/about-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 110px 0 110px 50px;
+
+  @include mq('sp') {
+    padding: 50px 4vw;
+  }
+}
+
+.about__content {
+  max-width: 590px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  background:rgba(255,255,255,.95);
+
+  @include mq('sp') {
+    margin: 0 auto;
+  }
+}

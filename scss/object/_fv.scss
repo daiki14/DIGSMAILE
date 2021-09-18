@@ -1,0 +1,67 @@
+.fv {
+  height: 100vh;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #222;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.kv__wrapper {
+  height: 86.5%;
+  width: 76.4%;
+  background-image: url(/img/kv-img.jpg);
+  background-size: cover;
+  background-position: center 0;
+  position: relative;
+}
+
+.copy__wrapper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  color: #fff;
+
+  @include mq('sp') {
+    right: -15px;
+    transform: translate(0, -50%)
+  }
+}
+
+.copy__jp {
+  font-size: 20px;
+  margin-bottom: 4px;
+
+  @include mq('sp') {
+    font-size: 16px;
+  }
+}
+
+.copy__company {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  @include mq('sp') {
+    font-size: 16px;
+  }
+}
+
+.main__copy {
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include mq('sp') {
+    font-size: 54px;
+  }
+}
